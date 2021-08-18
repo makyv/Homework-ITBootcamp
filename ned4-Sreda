@@ -56,8 +56,8 @@ public class Klub {
 
     }
     public void vatreniNapad(){
-            double randI = Math.random();
-            String randKata = kata[(int) randI];
+           double randI = Math.floor(Math.random() * kata.length - 1);
+          String randKata = kata[(int) randI];
           System.out.println( "Karatista " + ime + " napada sa " + randKata + " katom.");
         }
 
