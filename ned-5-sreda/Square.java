@@ -1,30 +1,21 @@
 package Domaci_sreda;
 
-public class Square extends Shape {
-    private double a;
+public class Square extends Rectangle {
 
-    public Square(String name, double a) {
-        super(name);
-        this.a = a;
-    }
 
-    public double getA() {
-        return a;
-    }
-
-    public void setA(double a) {
-        this.a = a;
+    public Square(String name, double a, double b) {
+        super(name, a, b);
     }
 
     @Override
     public double area() {
-        double P = a * a;
+        double P = getA() * getB();
         return P;
     }
 
     @Override
     public double circumference() {
-        double O = 4 * a;
+        double O = 4 * getA();
         return O;
     }
 
