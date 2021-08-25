@@ -37,5 +37,12 @@ public class Rectangle extends Shape {
         double O = 2 * (a + b);
         return O;
     }
+    
+      @Override
+    public String toString() {
+        return "Shape: " + getName() + " | "
+                + "Circumference: " + circumference() + " | "
+                + "Area: " + area() + "\n";
+    }
 
 }
