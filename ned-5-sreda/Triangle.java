@@ -37,7 +37,8 @@ public class Triangle extends Shape {
 
     @Override
     public double area() {
-        double P = (a * b) / 2;
+        double s = (a + b + c) / 2;
+        double P = Math.sqrt(s * (s - a) * (s - b) * (s - c));
         return P;
     }
 
