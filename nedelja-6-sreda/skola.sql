@@ -11,4 +11,4 @@ SELECT * FROM profesori
 WHERE predmet = 'Informatika';
 
 SELECT ucenikid, ime, prezime FROM ucenici
-WHERE LENGTH(6) AS ime;
+WHERE LENGTH(ime) = 6;
