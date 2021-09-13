@@ -69,8 +69,6 @@ where email like '%google.com'
 
 ---------------
 
-select * from fridgefood
-
 
 insert into fridgefood (fridge_id, food_id, mass)
 values (1, 5, 2.4)
