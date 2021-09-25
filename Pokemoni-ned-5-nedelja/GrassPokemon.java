@@ -27,7 +27,12 @@ public class GrassPokemon extends Pokemon implements Attackable{
 
     @Override
     public String logAll() {
-        return type + ":" + " " + name  +  "," + health + ":" + "\n" + attack() + "\n" + defend() + "\n" + wins() + "\n" + loseOf();
+         StringBuilder sb = new StringBuilder();
+        sb.append(attack()).append("\n")
+                .append(defend()).append("\n")
+                .append(win()).append("\n")
+                .append(lose()).append("\n");
+        return sb.toString();
     }
 
     // Napada: Travom
